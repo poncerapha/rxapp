@@ -52,4 +52,34 @@ public class Post {
     public List<Comment> getComments() {
         return comments;
     }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+
+    @Override
+    public String toString() {
+        return "Post{" +
+                "userId=" + userId +
+                ", id=" + id +
+                ", title='" + title + '\'' +
+                ", body='" + body + '\'' +
+                '}';
+    }
 }
