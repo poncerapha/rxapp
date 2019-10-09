@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onNext(Post post) {
-
+                        updatePost(post);
                     }
 
                     @Override
@@ -76,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
                 });
 
 
+    }
+
+    private void updatePost(Post post){
+        adapter.updatePost(post);
     }
 
     private Observable<Post> getCommetsobservable(final Post post) {
